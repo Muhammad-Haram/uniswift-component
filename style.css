@@ -29,6 +29,7 @@
     color: white;
     background-color: black;
     transition: 0.25s all;
+    border: 1px solid black;
 }
 
 .toggle-btn-banner-title {
@@ -49,8 +50,7 @@
 }
 
 .component-container {
-    display: flex;
-    gap: 10px;
+    position: relative;
 }
 
 .component-container-1 {
@@ -93,4 +93,42 @@
     color: black;
     rotate: 45deg;
     transition: 0.25s all;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .component-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .component-img {
+        height: 50vh;
+    }
+
+    .toggle-btn-banner {
+        background-color: #fcfcfcde;
+        padding: 10px;
+        border-radius: 10px;
+        width: 150px;
+        cursor: pointer;
+        display: none;
+        border: 1px solid black;
+        z-index: 5;
+    }
+
+    .toggle-btn-banner-text {
+        font-size: 10px;
+    }
+
+    .toggle-btn-banner-title {
+        font-size: 14px;
+    }
+
+    .component-container-5 {}
+
 }
