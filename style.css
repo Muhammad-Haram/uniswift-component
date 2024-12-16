@@ -7,12 +7,12 @@
 
 .component-img {
     width: 100%;
-    height: 100vh;
-    background-image: url(/ball.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
+}
+
+.component-img-tag {
+    width: 100%;
+    height: 100%;
 }
 
 .toggle-btn {
@@ -30,6 +30,10 @@
     background-color: black;
     transition: 0.25s all;
     border: 1px solid black;
+}
+
+.toggle-btn-ab {
+    position: relative;
 }
 
 .toggle-btn-banner-title {
@@ -51,6 +55,7 @@
 
 .component-container {
     position: relative;
+    gap: 5px;
 }
 
 .component-container-1 {
@@ -106,8 +111,43 @@
         flex-direction: column;
     }
 
-    .component-img {
-        height: 50vh;
+    .toggle-btn-banner {
+        background-color: #fcfcfcde;
+        padding: 10px;
+        border-radius: 10px;
+        width: 150px;
+        cursor: pointer;
+        display: none;
+        border: 1px solid black;
+        z-index: 5;
+    }
+
+    .toggle-btn-banner-text {
+        font-size: 10px;
+    }
+
+    .toggle-btn-banner-title {
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        padding: 3px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .component-container {
+        display: flex;
+        flex-direction: column;
     }
 
     .toggle-btn-banner {
@@ -129,6 +169,17 @@
         font-size: 14px;
     }
 
-    .component-container-5 {}
+    .toggle-btn {
+        padding: 3px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+    .toggle-btn-banner-ab {
+        position: absolute;
+        right: 0;
+        top: 37px;
+    }
 
 }
