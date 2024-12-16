@@ -55,7 +55,9 @@
 
 .component-container {
     position: relative;
-    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .component-container-1 {
